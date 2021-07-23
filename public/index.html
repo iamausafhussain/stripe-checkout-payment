@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- <link href="https://stripe-samples.github.io/developer-office-hours/demo.css" rel="stylesheet" type="text/css">
+  <script src='https://js.stripe.com/v3/'></script> -->
+  <title>Stripe Payment</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!-- <div id="main">
+    <div id="container">
+      <div id="panel">
+        <h1>Office Hours</h1>
+        <input type='number' step='1' id='quantity' value='3' />
+        <button type="submit" id="btn">Pay</button>
+      </div>
+    </div>
+  </div>
+
+  <script charset="utf-8">
+    var stripe = Stripe('pk_test_51I0laqARXzKvrwSUrR6C2Y2DdI01fofrHCoujDF3TCvxvlTyoJyWRh5ZMCJkhwuZy7Y3A5d0z8pHOD24oDcwNbPl00fnIC6kXV');
+    var button = document.getElementById('btn');
+    var quantity = document.getElementById('quantity');
+
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      fetch('/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          quantity: quantity.value
+        }),
+      })
+        .then((response => response.json()))
+        .then((session) => {
+          stripe.redirectToCheckout({
+            sessionId: session.id
+          })
+        })
+        .catch((error) => {
+          console.log('Error', erroe)
+        })
+    })
+  </script> -->
+</body>
+
+</html>
